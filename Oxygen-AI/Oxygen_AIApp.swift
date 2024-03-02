@@ -12,6 +12,10 @@ struct Oxygen_AIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.defaultSize(width: 600, height: 600)
+        
+        WindowGroup(id: "oxygen") {
+            NoteView()
+        }.defaultSize(width: 400, height: 400)
     }
 }
